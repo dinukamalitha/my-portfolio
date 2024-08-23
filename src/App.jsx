@@ -1,11 +1,12 @@
-import styles from './App.module.css';
-import Navbar from "./components/navabar/navbar.jsx";
+import {Navbar} from "./components/navabar/navbar.jsx";
+import {Home} from "./components/home/home.jsx";
 
 function App() {
 
   return (
     <>
       <Navbar/>
+      <Home/>
     </>
   )
 }

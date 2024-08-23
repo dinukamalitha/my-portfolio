@@ -13,7 +13,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 
 const pages = ['Home', 'About', 'Projects', 'Contacts'];
 
-function Navbar() {
+export const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {
@@ -25,7 +25,7 @@ function Navbar() {
     };
 
   return(
-      <AppBar position="static">
+      <AppBar position="fixed">
           <Container maxWidth="xl" sx={{backgroundColor: 'var(--color-primary)'}}>
               <Toolbar disableGutters>
                   <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -124,5 +124,3 @@ function Navbar() {
       </AppBar>
   )
 }
-
-export default Navbar;
