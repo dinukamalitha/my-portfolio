@@ -7,7 +7,7 @@ import { ReactTyped } from "react-typed";
 
 export const Home = () =>{
     return(
-        <section className={styles.container}>
+        <section id="home" className={styles.container}>
             <div className={styles.content}>
                 <h1 className={styles.title}>
                     Hi, I'm {""}
