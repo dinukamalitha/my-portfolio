@@ -13,6 +13,8 @@
     font-weight: 700;
     letter-spacing: 1.75px;
     text-transform: uppercase;
+    text-align: center;
+    margin-top: 25px;
 }
 
 .content{
@@ -23,16 +25,26 @@
 }
 
 .technologies{
-    width: 45%;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     gap: 37px;
+}
+
+.technologiesCard{
+    padding: 12.5px;
+    background-color: navajowhite;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    border-radius: 10px;
 }
 
 .technology{
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     gap: 11px;
 }
 
@@ -42,8 +54,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 
 .technologyImgContainer img{
@@ -51,7 +63,7 @@
 }
 
 .technology p{
-    font-size: 25px;
+    font-size: 15px;
     font-family: var(--font-roboto);
     font-weight: 500;
 }
