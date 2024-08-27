@@ -24,12 +24,12 @@
     margin-top: 14px;
 }
 
-.technologies{
-    width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 37px;
-}
+/*.technologies{*/
+/*    width: 60%;*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    gap: 37px;*/
+/*}*/
 
 .technologiesCard{
     padding: 12.5px;
@@ -118,7 +118,7 @@
         align-items: center;
         gap: 34px;
     }
-    .technologies{
+    .technologiesCard{
         width: 100%;
         flex-direction: row;
         justify-content: center;

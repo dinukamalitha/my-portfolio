@@ -11,7 +11,7 @@ export const Techstack = () => {
             <h2 className={styles.title}>Tech Stack</h2>
             <Box sx={{ flexGrow: 1, marginTop: '25px' }}>
                 <Grid container spacing={4}>
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <Typography variant="h5" sx={{textAlign:'center', color: 'white'}} gutterBottom>
                             Front-End
                         </Typography>
@@ -28,7 +28,7 @@ export const Techstack = () => {
                             })}
                         </div>
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <Typography variant="h5" sx={{textAlign:'center', color: 'white'}} gutterBottom>
                             Back-End
                         </Typography>
@@ -45,7 +45,7 @@ export const Techstack = () => {
                             })}
                         </div>
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <Typography variant="h5" sx={{textAlign:'center', color: 'white'}} gutterBottom>
                             DBMS & Deployment
                         </Typography>
