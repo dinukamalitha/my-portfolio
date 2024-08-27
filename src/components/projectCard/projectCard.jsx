@@ -2,30 +2,33 @@ import { getImageUrl } from "../../utils.js";
 import Button from "@mui/material/Button";
 import React from "react";
 import styles from "./projectCard.module.css";
+import CardMedia from "@mui/material/CardMedia";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import CardActions from "@mui/material/CardActions";
+import Card from "@mui/material/Card";
 
 export const ProjectCard = ({ project: { title, imageSrc, description, skills, demo, source } }) => {
     return (
-        <div className={styles.container}>
-            <img src={getImageUrl(imageSrc)} alt={`image of ${title}`} className={styles.image}/>
-            <h3 className={styles.title}>{title}</h3>
-            <p className={styles.description}>{description}</p>
-            <ul className={styles.skills}>
-                {skills.map((skill, id) => {
-                    return (
-                        <li key={id} className={styles.skill}>
-                            {skill}
-                        </li>
-                    );
-                })}
-            </ul>
-            <div className={styles.links}>
-                <Button variant="contained" href={demo} sx={{ borderRadius: '25px', padding: '2px 15px', fontSize:'10px'}}>
-                    Demo
-                </Button>
-                <Button variant="contained" href={source} sx={{ borderRadius: '25px', padding: '2px 15px', fontSize:'10px'}}>
-                    Source
-                </Button>
-            </div>
-        </div>
+        <Card sx={{ maxWidth: 345 }}>
+            <CardMedia
+                sx={{ height: 200 }}
+                image={getImageUrl(imageSrc)}
+                alt={`image of ${title}`}
+                title={title}
+            />
+            <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                    {title}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                    {description}
+                </Typography>
+            </CardContent>
+            <CardActions>
+                <Button size="small">View More</Button>
+                <Button size="small">View Source</Button>
+            </CardActions>
+        </Card>
     );
 };

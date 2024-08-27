@@ -12,6 +12,7 @@
     font-weight: 700;
     letter-spacing: 1.75px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .projects{
@@ -21,5 +22,24 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
+    width: 100%;
+}
+
+.mySwiper {
+    width: 100%;
+    padding: 50px 0;
+
+}
+
+.swiperSlide{
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    margin: 0 10px;
+}
+
+.swiperSlide img{
+    display: block;
     width: 100%;
 }
