@@ -64,7 +64,7 @@ export const Footer = () => {
                 </li>
             </ul>
 
-            <p>All Right Reserved &#169; 2024</p>
+            <p className={styles.text}>All Right Reserved &#169; 2024</p>
         </footer>
     );
 };

@@ -22,9 +22,11 @@ export const Home = () =>{
                 </h1>
                 <p className={styles.description}>
                     I'm a full-stack software developer and currently a second year IT Undergraduate at University of Moratuwa.
+                    This is my official personal website to showcase my all works related to Full Stack Software
+                    Development and Web Development.
                 </p>
 
-                <Button variant="contained" href="mailto:dinukamalitha2001@gmail.com" sx={{borderRadius: '25px', padding: '10px 20px'}}>Contact Me</Button>
+                <Button variant="contained" href="DINUKA MALITHA - CV.pdf" download="Resume.pdf" sx={{borderRadius: '25px', padding: '10px 20px'}}>Download CV</Button>
             </div>
 
             <img src={getImageUrl("profile.png")} alt="profile" className={styles.profileImg}/>
