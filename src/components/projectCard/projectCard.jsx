@@ -10,9 +10,9 @@ import Card from "@mui/material/Card";
 
 export const ProjectCard = ({ project: { title, imageSrc, description, skills, demo, source } }) => {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 375 }}>
             <CardMedia
-                sx={{ height: 200 }}
+                sx={{ height: 400 }}
                 image={getImageUrl(imageSrc)}
                 alt={`image of ${title}`}
                 title={title}
@@ -24,10 +24,18 @@ export const ProjectCard = ({ project: { title, imageSrc, description, skills, d
                 <Typography variant="body2" color="text.secondary">
                     {description}
                 </Typography>
+                <ul className={styles.skills}>
+                    {skills.map((skill, id) => {
+                        return (
+                            <li key={id} className={styles.skill}>
+                                {skill}
+                            </li>
+                        );
+                    })}
+                </ul>
             </CardContent>
-            <CardActions>
-                <Button size="small">View More</Button>
-                <Button size="small">View Source</Button>
+            <CardActions sx={{display: 'flex', flexDirection: 'row', justifyContent: ' center', marginBottom: '20px'}}>
+                <Button size="small" href={source} variant="outlined">View Source</Button>
             </CardActions>
         </Card>
     );

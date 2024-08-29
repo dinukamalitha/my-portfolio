@@ -6,93 +6,93 @@
     },
     {
       "title": "CSS",
-      "imageSrc": "css.png"
+      "imageSrc": "css.svg"
     },
     {
       "title": "JS",
-      "imageSrc": "css.png"
+      "imageSrc": "js.svg"
     },
     {
       "title": "React",
-      "imageSrc": "react.png"
+      "imageSrc": "react.svg"
     },
     {
       "title": "Angular",
-      "imageSrc": "angular.jpeg"
+      "imageSrc": "angular.svg"
     },
     {
       "title": "NextJS",
-      "imageSrc": "next.jpeg"
+      "imageSrc": "next.png"
     },
     {
       "title": "Bootstrap",
-      "imageSrc": "bootstrap.jpeg"
+      "imageSrc": "bootstrap.png"
     },
     {
       "title": "Tailwind",
-      "imageSrc": "tailwind.jpeg"
+      "imageSrc": "tailwind.png"
     }
   ],
 
   "backend": [
     {
-      "title": "Node",
-      "imageSrc": "node.png"
+      "title": "NodeJS",
+      "imageSrc": "node.svg"
     },
     {
       "title": "ExpressJS",
-      "imageSrc": "mongodb.jpeg"
+      "imageSrc": "expressjs.svg"
     },
     {
       "title": "nestJS",
-      "imageSrc": "mongodb.jpeg"
+      "imageSrc": "nestjs.png"
     },
     {
       "title": "Java",
-      "imageSrc": "figma.png"
+      "imageSrc": "java.svg"
     },
     {
       "title": "Spring Boot",
-      "imageSrc": "figma.png"
+      "imageSrc": "springboot.png"
     },
     {
       "title": "PHP",
-      "imageSrc": "figma.png"
+      "imageSrc": "php.svg"
     },
     {
       "title": "GraphQL",
-      "imageSrc": "graphql.png"
+      "imageSrc": "graphql.svg"
     }
   ],
 
   "dbms": [
     {
       "title": "MySQL",
-      "imageSrc": "node.png"
+      "imageSrc": "mysql.png"
     },
     {
       "title": "MSSQL",
-      "imageSrc": "graphql.png"
+      "imageSrc": "mssql.png"
     },
     {
       "title": "PostreSQL",
-      "imageSrc": "mongodb.jpeg"
+      "imageSrc": "postgresql.svg"
     },
     {
       "title": "MongoDB",
-      "imageSrc": "figma.png"
+      "imageSrc": "mongodb.svg"
     },
     {
       "title": "Docker",
-      "imageSrc": "figma.png"
+      "imageSrc": "docker.svg"
     },
     {
       "title": "Kubernetes",
-      "imageSrc": "figma.png"
+      "imageSrc": "kubernetes.svg"
     },
     {
       "title": "Azure",
-      "imageSrc": "figma.png"
+      "imageSrc": "azure.svg"
     }
   ]
 }

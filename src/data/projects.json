@@ -1,35 +1,35 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "title": "Tradeasy; Sales & Inventory Management System",
+    "imageSrc": "projects/Tradeasy.png",
+    "description": "A platform which customers, suppliers and the company together which optimize the sales and inventory management process.",
+    "skills": ["React", "NestJS", "PostgreSQL", "Stripe", "Docker"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/MrSilent2001/Sales-And-Inventory-Management-System"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
+    "title": " RiseUp Mora Web Portal",
+    "imageSrc": "projects/riseupmora.png",
+    "description": "A web application developed for the career fair organized by IEEE student branch of University of Moratuwa in 2023",
     "skills": ["React", "Express", "Node", "Sass"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://riseupmora.lk/"
   },
   {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "title": "AIESEC One",
+    "imageSrc": "projects/aiesecone.png",
+    "description": "A platform which optimizes and manages the internal processes; opportunities, resources and mambers of AIESEC in Sri Lanka.",
+    "skills": ["nextJS", "nestJS", "MongoDB"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://aiesec-one.vercel.app/"
   },
   {
-    "title": "Project D",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "title": "e- Doctor",
+    "imageSrc": "projects/e-doctor.png",
+    "description": "This is a UI Design created for a medical application which facilitates channelling of doctors online.",
+    "skills": ["Figma"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://www.figma.com/file/2v1HKDV2FoCpWKLy4M96RP/E-Doctor?node-id=0%3A1"
   },
   {
     "title": "Project E",
