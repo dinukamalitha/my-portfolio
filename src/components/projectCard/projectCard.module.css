@@ -48,3 +48,29 @@
     display: flex;
     justify-content: space-around;
 }
+
+@media  screen and (max-width: 830px){
+    .skill{
+        font-size: 18px;
+        padding: 2px 15px;
+    }
+    .links{
+        width: 100%;
+        margin-top: 26px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media  screen and (max-width: 600px){
+    .skill{
+        font-size: 14px;
+        padding: 2px 15px;
+    }
+    .links{
+        width: 100%;
+        margin-top: 26px;
+        display: flex;
+        justify-content: space-around;
+    }
+}

@@ -7,21 +7,23 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardActions from "@mui/material/CardActions";
 import Card from "@mui/material/Card";
+import {useMediaQuery} from "@mui/material";
 
 export const ProjectCard = ({ project: { title, imageSrc, description, skills, demo, source } }) => {
+    const isSmallScreen = useMediaQuery('(max-width:600px)');
     return (
-        <Card sx={{ maxWidth: 375 }}>
+        <Card sx={{ maxWidth: 375, minHeight: 600 }}>
             <CardMedia
-                sx={{ height: 400 }}
+                sx={{ minHeight:300 }}
                 image={getImageUrl(imageSrc)}
                 alt={`image of ${title}`}
                 title={title}
             />
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom  variant={isSmallScreen ? 'h6' : 'h5'} component="div">
                     {title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant={isSmallScreen ? 'body2' : 'body1'} color="text.secondary">
                     {description}
                 </Typography>
                 <ul className={styles.skills}>

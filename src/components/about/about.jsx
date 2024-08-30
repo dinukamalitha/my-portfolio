@@ -16,16 +16,13 @@ export const About = () => {
                     <li className={styles.aboutItem}>
                         <div className={styles.aboutItemText}>
                             <p>A Highly Motivated and Passionate Tech enthusiast who always seeks for opportunities to improve knowledge and skills.
-                                Currently studies as an IT Undergraduate at one of the leading universities in Sri Lanka focusing on developing my career
-                                as an IT Professional in the future.
                             </p>
                         </div>
                     </li>
 
                     <li className={styles.aboutItem}>
                         <div className={styles.aboutItemText}>
-                            <p>A Highly Motivated and Passionate Tech enthusiast who always seeks for opportunities to improve knowledge
-                                and skills. Currently studies as an IT Undergraduate at one of the leading universities in Sri Lanka
+                            <p>Currently studies as an IT Undergraduate at one of the leading universities in Sri Lanka
                                 focusing on developing my career as an IT Professional in the future.
                             </p>
                         </div>

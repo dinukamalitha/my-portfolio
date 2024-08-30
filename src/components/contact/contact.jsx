@@ -83,7 +83,6 @@ export const Contact = () => {
 
 // Styles
 const Section = styled.section`
-
     h2 {
         margin-top: 75px;
         margin-bottom: -100px;
@@ -92,6 +91,16 @@ const Section = styled.section`
         letter-spacing: 1.75px;
         text-transform: uppercase;
         text-align: center;
+
+        @media (max-width: 768px) {
+            font-size: 28px;
+            margin-bottom: -50px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 24px;
+            margin-bottom: -25px;
+        }
     }
 `;
 
@@ -112,21 +121,35 @@ const StyledContactForm = styled.div`
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         overflow: hidden;
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+            width: 80%;
+        }
     }
 
     .image-section {
         background: #f0f0f0;
+        flex: 1;
 
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+
+            @media (max-width: 768px) {
+                height: 200px;
+            }
         }
     }
 
     .form-section {
         flex: 1;
         padding: 2rem;
+        
+        @media (max-width: 600px) {
+            padding: 0.5rem;
+        }
 
         form {
             display: flex;
@@ -135,9 +158,8 @@ const StyledContactForm = styled.div`
             width: 100%;
             font-size: 16px;
 
-            input {
+            input, textarea {
                 width: 100%;
-                height: 35px;
                 padding: 7px;
                 outline: none;
                 border-radius: 5px;
@@ -146,26 +168,27 @@ const StyledContactForm = styled.div`
                 &:focus {
                     border: 2px solid rgba(0, 206, 158, 1);
                 }
+
+                @media (max-width: 600px) {
+                    padding: 5px;
+                }
             }
 
             textarea {
-                max-width: 100%;
-                min-width: 100%;
-                width: 100%;
                 max-height: 100px;
                 min-height: 100px;
-                padding: 7px;
-                outline: none;
-                border-radius: 5px;
-                border: 1px solid rgb(220, 220, 220);
-
-                &:focus {
-                    border: 2px solid rgba(0, 206, 158, 1);
+                
+                @media (max-width: 6000px) {
+                    min-height: 60px;
                 }
             }
 
             label {
                 margin-top: 1rem;
+
+                @media (max-width:600px) {
+                    margin-top: 1rem;
+                }
             }
 
             input[type="submit"] {
@@ -174,6 +197,12 @@ const StyledContactForm = styled.div`
                 background: rgb(249, 105, 14);
                 color: white;
                 border: none;
+
+
+                @media (max-width: 600px) {
+                    margin: 1rem 0;
+                    padding: 10px;
+                }
             }
         }
     }

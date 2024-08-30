@@ -32,6 +32,16 @@ export const Projects = () => {
                     pagination={true}
                     modules={[EffectCoverflow, Pagination]}
                     className={styles.mySwiper}
+                    breakpoints={{
+                        830: {
+                            effect: 'coverflow',
+                            slidesPerView: 3
+                        },
+                        0: {
+                            effect: 'slide',
+                            slidesPerView: 1
+                        },
+                    }}
                 >
                     {projects.map((project, id) => (
                         <SwiperSlide key={id} className={styles.swiperSlide}>
