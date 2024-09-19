@@ -32,19 +32,19 @@
     "source": "https://www.figma.com/file/2v1HKDV2FoCpWKLy4M96RP/E-Doctor?node-id=0%3A1"
   },
   {
-    "title": "Project E",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "title": "Narcotic Drugs Protector",
+    "imageSrc": "projects/hardware.jpg",
+    "description": "This is a semi-automated system developed for hospitals to enhance the security and management of narcotic medications.",
+    "skills": ["Arduino UNO", "C++"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/MrSilent2001/Narcotic-Drug-Protector"
   },
   {
-    "title": "Project F",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "title": "Weather App",
+    "imageSrc": "projects/weather.png",
+    "description": "This is a mini project developed using Angular 18 to identify weather condition of cities in the world.",
+    "skills": ["Angular 18", "Bootswatch", "OpenWeatherAPI"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/dinukamalitha/weather-app"
   }
 ]

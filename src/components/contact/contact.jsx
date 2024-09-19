@@ -84,13 +84,14 @@ export const Contact = () => {
 // Styles
 const Section = styled.section`
     h2 {
-        margin-top: 75px;
-        margin-bottom: -100px;
-        font-size: 35px;
+        color: var(--color-text-white);
+        font-size: 50px;
         font-weight: 700;
         letter-spacing: 1.75px;
         text-transform: uppercase;
         text-align: center;
+        padding: 65px 0 5px 0;
+        text-shadow: 5px 10px 4px rgba(0, 0, 0, 0.95);
 
         @media (max-width: 768px) {
             font-size: 28px;
@@ -110,6 +111,7 @@ const StyledContactForm = styled.div`
     align-items: center;
     height: 100vh;
     margin-bottom: 50px;
+    margin-top: -65px;
 
     .contact-container {
         display: flex;

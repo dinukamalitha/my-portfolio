@@ -23,14 +23,22 @@ export const Home = () =>{
                     </span>
                 </h1>
                 <p className={styles.description}>
-                    I'm a full-stack software developer and currently a second year IT Undergraduate at University of
-                    Moratuwa.
-                    This is my official personal website to showcase my all works related to Full Stack Software
-                    Development and Web Development.
+                    A Highly Motivated and Passionate Tech enthusiast with excellent academic record and a sound knowledge on
+                    latest cutting-edge technologies who always seeks for opportunities to improve knowledge and skills with a
+                    motive of securing a Software Engineering position in the industry.
                 </p>
 
                 <Button variant="contained" href="DINUKA MALITHA - CV.pdf" download="Resume.pdf"
-                        sx={{borderRadius: '25px', padding: '10px 20px'}}>Download CV</Button>
+                        sx={{
+                            borderRadius: '25px',
+                            padding: '10px 20px',
+                            backgroundColor: '#b71c1c',
+                            '&:hover': {
+                                backgroundColor: '#d50000'
+                            }
+                        }}>
+                    Download CV
+                </Button>
 
                 <ul className={styles.socialIcons}>
                     <li>

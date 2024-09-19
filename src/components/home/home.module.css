@@ -46,6 +46,7 @@ body{
     font-family: var(--font-roboto);
     margin-bottom: 52px;
     text-align: justify;
+    color: var(--color-text-white);
 }
 
 .contactBtn{
@@ -78,26 +79,26 @@ body{
 
 .topBlur{
     position: absolute;
-    width: 25vw;
-    height: 25vw;
+    width: 15vw;
+    height: 20vw;
     min-width: 250px;
-    top: -50px;
-    left: -1.5vw;
+    top: -20px;
+    left: -7.5em;
     border: 764px;
-    background: rgba(25,55,109,0.9);
-    filter: blur(100px);
+    background: rgba(104, 110, 159, 0.9);
+    filter: blur(90px);
     z-index: 0;
 }
 
 .bottomBlur{
     position: absolute;
-    width: 50vw;
+    width: 30vw;
     height: 25vw;
-    min-width: 150px;
+    min-width: 125px;
     top: 246px;
     right: -5vw;
     border: 764px;
-    background: rgba(25,55,109,0.9);
+    background: rgba(159, 183, 228, 0.9);
     filter: blur(100px);
     z-index: 0;
 }
