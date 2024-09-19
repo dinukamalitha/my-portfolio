@@ -28,7 +28,7 @@ export const Home = () =>{
                     motive of securing a Software Engineering position in the industry.
                 </p>
 
-                <Button variant="contained" href="DINUKAMALITHA-CV.pdf" download="Resume.pdf"
+                <Button variant="contained" href="/DINUKAMALITHA-CV.pdf" download="Resume.pdf"
                         sx={{
                             borderRadius: '25px',
                             padding: '10px 20px',
