@@ -1,20 +1,38 @@
 :root{
-    /*Colors*/
-    /*--color-text: #000;*/
-    /*--color-primary:#0D1B2A;*/
-    /*--color-secondary: #415A77;*/
-    /*--color-tertiary: #778DA9;*/
-    /*--color-dark: #1B263B;*/
-    /*--color-bg: #1B263B;*/
+    /* Core Text Colors */
+    --color-text: #111827;
+    --color-text-white: #FFFFFF;
+    --color-text-muted: #6B7280;
 
-    --color-text: #000;
-    --color-text-white: #fff;
-    --color-primary: #03182c;
-    --color-secondary: #e8ebef;
-    --color-tertiary: #778DA9;
-    --color-dark: #1B263B;
-    --color-bg: #082242;
+    /* Brand & Accent - pinkish purple (light theme defaults) */
+    --color-primary: #7C3AED;       /* purple */
+    --color-primary-dark: #5B21B6;  /* darker purple */
+    --color-accent: #EC4899;        /* pink */
 
-    /*Fonts*/
+    /* Surfaces & Backgrounds */
+    --color-bg: #FDF2FF;            /* very light pink/purple wash */
+    --color-surface: #FFFFFF;
+    --color-secondary: #FCE7F3;     /* soft pink for subtle sections/chips */
+    --color-border: #E5E7EB;
+    --color-dark: #020617;          /* deep background if needed */
+
+    /* Typography */
     --font-roboto: "roboto";
+}
+
+/* Dark theme overrides */
+[data-theme="dark"]{
+    --color-text: #E5E7EB;
+    --color-text-white: #F9FAFB;
+    --color-text-muted: #9CA3AF;
+
+    --color-primary: #A855F7;        /* brighter purple for dark bg */
+    --color-primary-dark: #7C3AED;
+    --color-accent: #F472B6;
+
+    --color-bg: #020617;             /* near-black slate */
+    --color-surface: #020617;
+    --color-secondary: #111827;
+    --color-border: #1F2937;
+    --color-dark: #020617;
 }

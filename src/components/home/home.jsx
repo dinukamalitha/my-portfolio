@@ -28,15 +28,23 @@ export const Home = () =>{
                     motive of securing a Software Engineering position in the industry.
                 </p>
 
-                <Button variant="contained" href="/DINUKAMALITHA-CV.pdf" download="Resume.pdf"
-                        sx={{
-                            borderRadius: '25px',
-                            padding: '10px 20px',
-                            backgroundColor: '#b71c1c',
-                            '&:hover': {
-                                backgroundColor: '#d50000'
-                            }
-                        }}>
+                <Button
+                    variant="contained"
+                    href="/DINUKAMALITHA-CV.pdf"
+                    download="Resume.pdf"
+                    sx={{
+                        borderRadius: '9999px',
+                        padding: '10px 24px',
+                        textTransform: 'none',
+                        fontWeight: 500,
+                        backgroundColor: 'var(--color-primary)',
+                        boxShadow: '0 12px 30px rgba(37, 99, 235, 0.35)',
+                        '&:hover': {
+                            backgroundColor: 'var(--color-primary-dark)',
+                            boxShadow: '0 16px 40px rgba(37, 99, 235, 0.5)',
+                        }
+                    }}
+                >
                     Download CV
                 </Button>
 

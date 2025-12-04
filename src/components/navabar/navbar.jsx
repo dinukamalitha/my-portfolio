@@ -10,11 +10,23 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
+import {applyTheme, getInitialTheme} from "../../utils.js";
 
 const pages = ['Home', 'About', 'Tech Stack', 'Projects', 'Contacts'];
 
 export const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
+    const [theme, setTheme] = React.useState(getInitialTheme);
+
+    React.useEffect(() => {
+        applyTheme(theme);
+    }, [theme]);
+
+    const toggleTheme = () => {
+        setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+    };
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
@@ -31,10 +43,19 @@ export const Navbar = () => {
     };
 
     return (
-        <AppBar position="fixed">
-            <Container maxWidth="xl" sx={{ backgroundColor: 'var(--color-primary)' }}>
+        <AppBar
+            position="fixed"
+            elevation={0}
+            sx={{
+                backgroundColor: 'rgba(255,255,255,0.9)',
+                backdropFilter: 'blur(12px)',
+                color: 'var(--color-text)',
+                borderBottom: '1px solid rgba(229,231,235,0.7)',
+            }}
+        >
+            <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+                    <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: 'var(--color-primary)' }} />
                     <Typography
                         variant="h6"
                         noWrap
@@ -43,10 +64,10 @@ export const Navbar = () => {
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'monospace',
+                            fontFamily: 'Poppins, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
-                            color: 'inherit',
+                            color: 'var(--color-primary)',
                             textDecoration: 'none',
                         }}
                     >
@@ -92,7 +113,7 @@ export const Navbar = () => {
                         </Menu>
                     </Box>
 
-                    <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+                    <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, color: 'var(--color-primary)' }} />
                     <Typography
                         variant="h5"
                         noWrap
@@ -102,10 +123,10 @@ export const Navbar = () => {
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
                             flexGrow: 1,
-                            fontFamily: 'monospace',
+                            fontFamily: 'Poppins, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
-                            color: 'inherit',
+                            color: 'var(--color-primary)',
                             textDecoration: 'none',
                         }}
                     >
@@ -118,16 +139,37 @@ export const Navbar = () => {
                                 key={page}
                                 onClick={() => handleMenuItemClick(page.toLowerCase())}
                                 sx={{
-                                    my: 2, mx: 2, color: 'white', display: 'block',
+                                    my: 1.5,
+                                    mx: 1.5,
+                                    color: 'var(--color-text-muted)',
+                                    textTransform: 'none',
+                                    fontWeight: 500,
+                                    fontSize: '0.95rem',
+                                    borderRadius: '9999px',
+                                    px: 2,
                                     '&:hover': {
-                                        backgroundColor: 'rgba(255, 255, 255, 0.25)',
-                                    }
+                                        backgroundColor: 'rgba(124, 58, 237, 0.08)',
+                                        color: 'var(--color-primary)',
+                                    },
                                 }}
                             >
                                 {page}
                             </Button>
                         ))}
                     </Box>
+
+                    <IconButton
+                        sx={{ ml: 1 }}
+                        onClick={toggleTheme}
+                        color="inherit"
+                        aria-label="Toggle light/dark theme"
+                    >
+                        {theme === 'dark' ? (
+                            <Brightness7Icon sx={{ color: 'var(--color-accent)' }} />
+                        ) : (
+                            <Brightness4Icon sx={{ color: 'var(--color-primary)' }} />
+                        )}
+                    </IconButton>
                 </Toolbar>
             </Container>
         </AppBar>
