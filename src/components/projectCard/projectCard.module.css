@@ -3,9 +3,9 @@
 .container{
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
-    box-shadow: 0 16px 14px 0 #04152d;
+    border-radius: 16px;
+    background: var(--color-surface);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
     padding: 18px 24px;
     max-width: 345px;
 }
@@ -38,7 +38,8 @@
     font-size: 15px;
     font-weight: 200;
     border-radius: 100px;
-    background: gold;
+    background: var(--color-secondary);
+    color: var(--color-primary);
     padding: 2px 22px;
 }
 

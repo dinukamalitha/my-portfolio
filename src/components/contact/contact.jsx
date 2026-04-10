@@ -84,14 +84,14 @@ export const Contact = () => {
 // Styles
 const Section = styled.section`
     h2 {
-        color: var(--color-text-white);
+        color: var(--color-text);
         font-size: 50px;
         font-weight: 700;
         letter-spacing: 1.75px;
         text-transform: uppercase;
         text-align: center;
         padding: 65px 0 5px 0;
-        text-shadow: 5px 10px 4px rgba(0, 0, 0, 0.95);
+        text-shadow: none;
 
         @media (max-width: 768px) {
             font-size: 28px;
@@ -109,9 +109,9 @@ const StyledContactForm = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin-bottom: 50px;
-    margin-top: -65px;
+    padding: 48px 0 80px 0;
+    margin-bottom: 0;
+    margin-top: 0;
 
     .contact-container {
         display: flex;
@@ -119,8 +119,8 @@ const StyledContactForm = styled.div`
         align-items: center;
         width: 80%;
         max-width: 1000px;
-        background: white;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        background: var(--color-surface);
+        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
         border-radius: 10px;
         overflow: hidden;
 
@@ -196,9 +196,20 @@ const StyledContactForm = styled.div`
             input[type="submit"] {
                 margin-top: 2rem;
                 cursor: pointer;
-                background: rgb(249, 105, 14);
+                background: var(--color-primary);
                 color: white;
                 border: none;
+                border-radius: 9999px;
+                padding: 10px 24px;
+                font-weight: 500;
+                text-transform: none;
+                transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
+                &:hover {
+                    background: var(--color-primary-dark);
+                    transform: translateY(-1px);
+                    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.35);
+                }
 
 
                 @media (max-width: 600px) {

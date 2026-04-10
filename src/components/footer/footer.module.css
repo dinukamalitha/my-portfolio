@@ -9,7 +9,7 @@ footer{
     display: flex;
     position: relative;
     width: 100%;
-    background: #3586ff;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
     min-height: 100px;
     padding: 20px 50px;
     justify-content: center;

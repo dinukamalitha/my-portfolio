@@ -1,20 +1,58 @@
-:root{
-    /*Colors*/
-    /*--color-text: #000;*/
-    /*--color-primary:#0D1B2A;*/
-    /*--color-secondary: #415A77;*/
-    /*--color-tertiary: #778DA9;*/
-    /*--color-dark: #1B263B;*/
-    /*--color-bg: #1B263B;*/
+:root {
+    /* Core Text Colors */
+    --color-text: #E5E7EB;
+    --color-text-white: #F9FAFB;
+    --color-text-muted: #9CA3AF;
 
-    --color-text: #000;
-    --color-text-white: #fff;
-    --color-primary: #03182c;
-    --color-secondary: #e8ebef;
-    --color-tertiary: #778DA9;
-    --color-dark: #1B263B;
-    --color-bg: #082242;
+    /* Brand & Accent - pinkish purple (dark theme defaults) */
+    --color-primary: #A855F7;
+    --color-primary-dark: #7C3AED;
+    --color-accent: #F472B6;
 
-    /*Fonts*/
+    /* social icons */
+    --color-social-icons: #cbaefe;
+
+    /* Surfaces & Backgrounds */
+    --color-bg: #020617;
+    --color-bg-navbar: rgba(38, 25, 67, 0.85);
+
+    --color-surface: #020617;
+    --color-secondary: #111827;
+    --color-border: #1F2937;
+    --color-dark: #020617;
+
+    /* Typography */
     --font-roboto: "roboto";
+
+    /* About Section Containers */
+    --about-border: 1px solid rgba(255, 255, 255, 0.1);
+    --about-shadow: 0 8px 32px rgba(124, 58, 237, 0.2);
+    --about-bg: rgba(2, 6, 23, 0.7);
+    --about-backdrop: blur(12px);
+}
+
+/* Light theme overrides */
+[data-theme="light"] {
+    --color-text: #111827;
+    --color-text-white: #FFFFFF;
+    --color-text-muted: #6B7280;
+
+    --color-primary: #7C3AED;
+    --color-primary-dark: #5B21B6;
+    --color-accent: #EC4899;
+
+    --color-social-icons: #5f017e;
+
+    --color-bg: #FDF2FF;
+    --color-bg-navbar: rgba(255, 230, 253, 0.85);
+
+    --color-surface: #FFFFFF;
+    --color-secondary: #FCE7F3;
+    --color-border: #E5E7EB;
+    --color-dark: #020617;
+
+    --about-border: 1px solid transparent;
+    --about-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+    --about-bg: #FFFFFF;
+    --about-backdrop: none;
 }
