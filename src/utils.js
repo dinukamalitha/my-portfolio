@@ -5,15 +5,13 @@ export const getImageUrl = (path) =>{
 const THEME_KEY = 'dm-portfolio-theme';
 
 export const getInitialTheme = () => {
-    if (typeof window === 'undefined') return 'light';
+    if (typeof window === 'undefined') return 'dark';
 
     const stored = window.localStorage.getItem(THEME_KEY);
     if (stored === 'light' || stored === 'dark') return stored;
 
-    const prefersDark = window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    return prefersDark ? 'dark' : 'light';
+    // Default to dark theme regardless of OS preference
+    return 'dark';
 };
 
 export const applyTheme = (theme) => {
