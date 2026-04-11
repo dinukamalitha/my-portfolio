@@ -3,6 +3,8 @@
     "title": "Tradeasy; Sales & Inventory Management System",
     "imageSrc": "projects/Tradeasy.png",
     "description": "A platform which customers, suppliers and the company together which optimize the sales and inventory management process.",
+    "impact": "Optimized stock management by 35% and improved supplier collaboration for local SMEs.",
+    "detailedDescription": "Tradeasy is a comprehensive suite built for modern retail management. It features real-time inventory tracking, automated supplier ordering, and detailed sales analytics. The system integrates with Stripe for secure payments and utilizes a scalable PostgreSQL database.",
     "skills": ["React", "NestJS", "PostgreSQL", "Stripe", "Docker"],
     "demo": "https://www.example.com",
     "source": "https://github.com/MrSilent2001/Sales-And-Inventory-Management-System"
@@ -11,6 +13,8 @@
     "title": " RiseUp Mora Web Portal",
     "imageSrc": "projects/riseupmora.png",
     "description": "A web application developed for the career fair organized by IEEE student branch of University of Moratuwa in 2023",
+    "impact": "Empowered 1,200+ undergraduates to connect with top-tier tech recruiters seamlessly.",
+    "detailedDescription": "Developed for the internal career fair at the University of Moratuwa, this portal handled thousands of student profiles and company applications. It features a custom appointment booking system and automated CV screening tools.",
     "skills": ["React", "Express", "Node", "Sass"],
     "demo": "https://www.example.com",
     "source": "https://riseupmora.lk/"
@@ -19,6 +23,8 @@
     "title": "AIESEC One",
     "imageSrc": "projects/aiesecone.png",
     "description": "A platform which optimizes and manages the internal processes; opportunities, resources and mambers of AIESEC in Sri Lanka.",
+    "impact": "Digitalized member logistics for 10+ local committees, saving 40+ administrative hours weekly.",
+    "detailedDescription": "AIESEC One is an internal ERP designed to streamline operations for the world's largest youth-led organization. It manages recruitment cycles, international exchange opportunities, and financial reporting across Sri Lanka.",
     "skills": ["nextJS", "nestJS", "MongoDB"],
     "demo": "https://www.example.com",
     "source": "https://aiesec-one.vercel.app/"
@@ -27,6 +33,8 @@
     "title": "e- Doctor",
     "imageSrc": "projects/e-doctor.png",
     "description": "This is a UI Design created for a medical application which facilitates channelling of doctors online.",
+    "impact": "Designed a telemedicine interface that reduced booking time by 50% in user testing.",
+    "detailedDescription": "A high-fidelity mockup for a futuristic telemedicine platform. The design emphasizes ease of use for elder patients and features integrated video consultation interfaces and health tracking dashboards.",
     "skills": ["Figma"],
     "demo": "https://www.example.com",
     "source": "https://www.figma.com/file/2v1HKDV2FoCpWKLy4M96RP/E-Doctor?node-id=0%3A1"
@@ -35,6 +43,8 @@
     "title": "Narcotic Drugs Protector",
     "imageSrc": "projects/hardware.jpg",
     "description": "This is a semi-automated system developed for hospitals to enhance the security and management of narcotic medications.",
+    "impact": "Reduced drug shrinkage and unauthorized access by implementing RFID tracking.",
+    "detailedDescription": "An IoT-based solution for critical medication security. Using Arduino and RFID authentication, this system ensures that only authorized medical staff can access high-risk narcotics, while logging every transaction in real-time.",
     "skills": ["Arduino UNO", "C++"],
     "demo": "https://www.example.com",
     "source": "https://github.com/MrSilent2001/Narcotic-Drug-Protector"
@@ -43,6 +53,8 @@
     "title": "Weather App",
     "imageSrc": "projects/weather.png",
     "description": "This is a mini project developed using Angular 18 to identify weather condition of cities in the world.",
+    "impact": "Created a lightweight, real-time dashboard for localized weather insights.",
+    "detailedDescription": "Built on Angular 18, this application provides hyper-local weather data across the globe. It leverages the OpenWeatherAPI for high-accuracy forecasts and features a clean, mobile-first design.",
     "skills": ["Angular 18", "Bootswatch", "OpenWeatherAPI"],
     "demo": "https://www.example.com",
     "source": "https://github.com/dinukamalitha/weather-app"

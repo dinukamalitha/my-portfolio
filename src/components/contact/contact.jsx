@@ -83,6 +83,7 @@ export const Contact = () => {
 
 // Styles
 const Section = styled.section`
+    scroll-margin-top: 90px;
     h2 {
         color: var(--color-text);
         font-size: 50px;
@@ -90,7 +91,7 @@ const Section = styled.section`
         letter-spacing: 1.75px;
         text-transform: uppercase;
         text-align: center;
-        padding: 65px 0 5px 0;
+        padding: 30px 0 5px 0;
         text-shadow: none;
 
         @media (max-width: 768px) {

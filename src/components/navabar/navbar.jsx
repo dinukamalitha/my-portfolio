@@ -132,20 +132,23 @@ export const Navbar = () => {
                     </Box>
 
                     {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, color: 'var(--color-primary)' }} /> */}
+                    {/* Mobile Title - Perfectly Centered */}
                     <Typography
                         variant="h5"
                         noWrap
                         component="a"
                         href="#home"
                         sx={{
-                            mr: 2,
                             display: { xs: 'flex', md: 'none' },
-                            flexGrow: 1,
-                            fontFamily: 'Poppins, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif',
+                            position: 'absolute',
+                            left: '50%',
+                            transform: 'translateX(-50%)',
                             fontWeight: 700,
                             letterSpacing: '.125rem',
                             color: 'var(--color-social-icons)',
                             textDecoration: 'none',
+                            fontFamily: 'Poppins, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                            zIndex: 1,
                         }}
                     >
                         Dinuka Malitha

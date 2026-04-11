@@ -3,11 +3,32 @@
 .container {
     position: relative;
     border-radius: 15px;
-    padding: 75px 20px;
-    margin-top: 129px;
+    padding: 20px 0 0 0;
+    margin-top: 80px;
+    scroll-margin-top: 90px;
     z-index: 1;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 92%;
+        padding: 50px 10px;
+    }
 }
 
 .title {
@@ -94,7 +115,8 @@
 .aboutItemsContent {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Centers the list block horizontally */
+    align-items: center;
+    /* Centers the list block horizontally */
     width: 100%;
     padding-top: 30px;
 }
@@ -145,8 +167,6 @@
 
 @media screen and (max-width: 950px) {
     .container {
-        margin-left: 5%;
-        margin-right: 5%;
         padding: 60px 15px;
     }
 
@@ -172,16 +192,10 @@
 }
 
 @media screen and (max-width: 830px) {
-    .container {
-        margin-left: 3%;
-        margin-right: 3%;
-    }
 }
 
 @media screen and (max-width: 600px) {
     .container {
-        margin-left: 5%;
-        margin-right: 5%;
         padding: 50px 10px;
     }
 
