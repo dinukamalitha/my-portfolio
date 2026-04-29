@@ -2,14 +2,8 @@ import { getImageUrl } from "../../utils.js";
 import styles from "./about.module.css";
 import { useState } from "react";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import Dialog from '@mui/material/Dialog';
-import DialogTitle from '@mui/material/DialogTitle';
-import DialogContent from '@mui/material/DialogContent';
-import IconButton from '@mui/material/IconButton';
-import CloseIcon from '@mui/icons-material/Close';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import SchoolIcon from '@mui/icons-material/School';
-import { icon } from "@fortawesome/fontawesome-svg-core";
 
 export const About = () => {
     const [activeSection, setActiveSection] = useState('Education');
