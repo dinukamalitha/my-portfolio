@@ -21,6 +21,7 @@ export const ProjectCard = ({ project: { title, imageSrc, description, impact, s
                 cursor: 'pointer',
                 transition: 'transform 0.3s ease, box-shadow 0.3s ease',
                 backgroundColor: 'var(--color-surface)',
+                border: '1px solid rgba(124, 58, 237, 0.3)',
                 color: 'var(--color-text)',
                 borderRadius: '16px',
                 '&:hover': {

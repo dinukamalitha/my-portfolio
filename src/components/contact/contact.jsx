@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import styles from "./contact.module.css";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import { getImageUrl } from "../../utils.js";
@@ -47,8 +48,9 @@ export const Contact = () => {
     };
 
     return (
-        <Section id="contacts" className="container">
-            <h2>Contact Me!</h2>
+        <Section id="contact" className={styles.container}>
+            <p className={styles.title}>Contact Me!</p>
+
             <StyledContactForm>
                 <div className="contact-container">
                     <div className="image-section">

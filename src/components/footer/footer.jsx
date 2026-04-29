@@ -1,4 +1,3 @@
-import * as React from 'react';
 import styles from "./footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faLinkedin, faGithub, faHackerrank } from '@fortawesome/free-brands-svg-icons';
@@ -6,32 +5,25 @@ import { faFacebook, faLinkedin, faGithub, faHackerrank } from '@fortawesome/fre
 export const Footer = () => {
     return (
         <footer>
-            <div className={styles.waves} >
-                <div className={styles.wave} id={styles.wave1}></div>
-                <div className={styles.wave} id={styles.wave2}></div>
-                <div className={styles.wave} id={styles.wave3}></div>
-                <div className={styles.wave} id={styles.wave4}></div>
-
-            </div>
             <ul className={styles.socialIcons}>
                 <li>
                     <a href="https://facebook.com/dinuka.malitha.9">
-                        <FontAwesomeIcon icon={faFacebook}/>
+                        <FontAwesomeIcon icon={faFacebook} />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/dinuka-malitha/">
-                        <FontAwesomeIcon icon={faLinkedin}/>
+                        <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/dinukamalitha">
-                        <FontAwesomeIcon icon={faGithub}/>
+                        <FontAwesomeIcon icon={faGithub} />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.hackerrank.com/dm2001">
-                        <FontAwesomeIcon icon={faHackerrank}/>
+                        <FontAwesomeIcon icon={faHackerrank} />
                     </a>
                 </li>
             </ul>
@@ -48,13 +40,13 @@ export const Footer = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#tech stack">
-                        Technologies
+                    <a href="#projects">
+                        Projects
                     </a>
                 </li>
                 <li>
-                    <a href="#projects">
-                        Projects
+                    <a href="#achievments">
+                        Achievements
                     </a>
                 </li>
                 <li>
@@ -64,7 +56,7 @@ export const Footer = () => {
                 </li>
             </ul>
 
-            <p className={styles.text}>All Right Reserved &#169; 2024</p>
+            <p className={styles.text}>All Right Reserved &#169; 2026</p>
         </footer>
     );
 };

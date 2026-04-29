@@ -1,4 +1,5 @@
 import * as React from 'react';
+import styles from "./navbar.module.css";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -9,7 +10,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { applyTheme, getInitialTheme } from "../../utils.js";
@@ -19,10 +19,34 @@ const pages = ['About', 'Projects', 'Achievements', 'Contact'];
 export const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [theme, setTheme] = React.useState(getInitialTheme);
+    const [activeSection, setActiveSection] = React.useState('');
 
     React.useEffect(() => {
         applyTheme(theme);
     }, [theme]);
+
+    React.useEffect(() => {
+        const handleScroll = () => {
+            const sections = pages.map(page => document.getElementById(page.toLowerCase()));
+            let current = '';
+            
+            for (const section of sections) {
+                if (section) {
+                    const sectionTop = section.offsetTop;
+                    // Trigger active state when section is within top 200px of viewport
+                    if (window.scrollY >= sectionTop - 200) {
+                        current = section.id;
+                    }
+                }
+            }
+            setActiveSection(current);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Initial check
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const toggleTheme = () => {
         setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
@@ -57,7 +81,9 @@ export const Navbar = () => {
         >
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: 'var(--color-primary)' }} /> */}
+                     <div className={styles.logoContainer}>
+                         <img src="/LOGO-DARK.png" width={40} height={40} alt="Logo" className={styles.logo} />
+                     </div>
                     <Typography
                         variant="h6"
                         noWrap
@@ -114,12 +140,13 @@ export const Navbar = () => {
                                         mb: 0.5,
                                         borderRadius: '8px',
                                         transition: 'all 0.2s',
+                                        backgroundColor: activeSection === page.toLowerCase() ? 'var(--color-primary)' : 'transparent',
+                                        color: activeSection === page.toLowerCase() ? '#ffffff' : 'inherit',
+                                        '& .MuiTypography-root': {
+                                            color: activeSection === page.toLowerCase() ? '#ffffff' : 'inherit',
+                                        },
                                         '&:hover': {
-                                            backgroundColor: 'var(--color-primary)',
-                                            color: '#ffffff',
-                                            '& .MuiTypography-root': {
-                                                color: '#ffffff',
-                                            }
+                                            backgroundColor: activeSection === page.toLowerCase() ? 'var(--color-primary)' : 'rgba(124, 58, 237, 0.1)',
                                         }
                                     }}
                                 >
@@ -162,7 +189,8 @@ export const Navbar = () => {
                                 sx={{
                                     my: 1.5,
                                     mx: 1,
-                                    color: 'var(--color-text)',
+                                    color: activeSection === page.toLowerCase() ? '#ffffff' : 'var(--color-text)',
+                                    backgroundColor: activeSection === page.toLowerCase() ? 'var(--color-primary)' : 'transparent',
                                     textTransform: 'none',
                                     fontWeight: 600,
                                     fontSize: '1rem',
@@ -171,11 +199,10 @@ export const Navbar = () => {
                                     px: 2.5,
                                     py: 1,
                                     transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                                    transform: activeSection === page.toLowerCase() ? 'translateY(-2px)' : 'none',
+                                    boxShadow: activeSection === page.toLowerCase() ? '0 4px 12px rgba(124, 58, 237, 0.3)' : 'none',
                                     '&:hover': {
-                                        backgroundColor: 'var(--color-primary)',
-                                        color: '#ffffff',
-                                        transform: 'translateY(-2px)',
-                                        boxShadow: '0 4px 12px rgba(124, 58, 237, 0.3)',
+                                        backgroundColor: activeSection === page.toLowerCase() ? 'var(--color-primary)' : 'rgba(124, 58, 237, 0.1)',
                                     },
                                 }}
                             >

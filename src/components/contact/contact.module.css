@@ -1,30 +1,52 @@
 @import "../../vars.css";
 
-.container{
+.container {
+    position: relative;
+    border-radius: 15px;
+    scroll-margin-top: 90px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 92%;
+        padding: 50px 10px;
+    }
+}
+
+.title {
+    text-align: center;
     color: var(--color-text);
-    margin-top: 50px;
-    background-color: var(--color-secondary);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    padding: 58px 10%;
-    gap: 10px;
-}
-
-.text h2{
-    font-size:80px;
+    font-size: 25px;
     font-weight: 700;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 25px 0;
+    text-shadow: none;
 }
 
-.text p{
+.text p {
     font-size: 40px;
     font-weight: 400;
     letter-spacing: 2px;
 }
 
-.links{
+.links {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -32,13 +54,13 @@
     gap: 26px;
 }
 
-.link{
+.link {
     display: flex;
     align-items: center;
     gap: 25px;
 }
 
-.link a{
+.link a {
     color: var(--color-text);
     text-decoration: none;
     font-size: 30px;
@@ -47,35 +69,35 @@
 }
 
 @media screen and(max-width: 830px) {
-    .container{
+    .container {
         flex-direction: column;
         gap: 23px;
     }
 
-    .text{
+    .text {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .links{
+    .links {
         align-items: center;
     }
 }
 
 @media screen and(max-width: 600px) {
-    .container{
+    .container {
         flex-direction: column;
         gap: 23px;
     }
 
-    .text{
+    .text {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .links{
+    .links {
         align-items: center;
     }
 }
