@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import styles from "./contact.module.css";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import { getImageUrl } from "../../utils.js";
@@ -47,8 +48,9 @@ export const Contact = () => {
     };
 
     return (
-        <Section id="contacts" className="container">
-            <h2>Contact Me!</h2>
+        <Section id="contact" className={styles.container}>
+            <p className={styles.title}>Contact Me!</p>
+
             <StyledContactForm>
                 <div className="contact-container">
                     <div className="image-section">
@@ -83,6 +85,7 @@ export const Contact = () => {
 
 // Styles
 const Section = styled.section`
+    scroll-margin-top: 90px;
     h2 {
         color: var(--color-text);
         font-size: 50px;
@@ -90,7 +93,7 @@ const Section = styled.section`
         letter-spacing: 1.75px;
         text-transform: uppercase;
         text-align: center;
-        padding: 65px 0 5px 0;
+        padding: 30px 0 5px 0;
         text-shadow: none;
 
         @media (max-width: 768px) {

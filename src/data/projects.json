@@ -1,49 +1,140 @@
 [
   {
-    "title": "Tradeasy; Sales & Inventory Management System",
+    "title": "GemIntel; AI Based Gemstones Classification, Cut Prediction & Value Estimation Framework. (Final Year Research Project)",
+    "imageSrc": "projects/gemIntel.png",
+    "description": "A system which assists people with and without knowledge of gemstones to identify, determine the quality and value of gemstones.",
+    "impact": "Reduce the biasness and Human error involved in identification, cutting and valuation of gemstones.",
+    "detailedDescription": "GemIntel is a cutting-edge AI-driven platform designed to revolutionize the gemstone industry. It bridges the gap between novice buyers and expert gemologists by leveraging Vision Transformers, Transfer Learning and GNN algorithms. The system provides real-time classification, precision cut grading, and fair market valuation, ensuring transparency and accuracy in every transaction.",
+    "skills": [
+      "PyTorch",
+      "ViT",
+      "Image Processing",
+      "Data Augmentation",
+      "CNN",
+      "Docker"
+    ],
+    "demo": "",
+    "source": "https://github.com/dinukamalitha/GemIntel"
+  },
+  {
+    "title": "X-Bus - Multi-Purpose Bus Fleet Management System.  (Third Year Individual Project)",
+    "imageSrc": "projects/xbus.png",
+    "description": "A centralized system to locate buses, seat reservation, online payments, lost & found item management of passengers in public bus transportation.",
+    "impact": "Resolved the Passenger overcharging, long bus queues & waiting time, currency usage, lack of proper mechanism in bus transportation to manage lost & found items, bus location tracking.",
+    "detailedDescription": "A centralized system to locate buses, seat reservation, online payments, lost & found item management of passengers in public bus transportation, A centralized platform for the bus owners to easily manage their bus fleets, revenues and expenses, passenger feedbacks & complaints etc...",
+    "skills": [
+      "React Js",
+      "Node JS",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Stripe",
+      "Google Maps API",
+      "Docker"
+    ],
+    "demo": "",
+    "source": "https://github.com/MrSilent2001/X-Bus_Web"
+  },
+  {
+    "title": "Tradeasy; Sales & Inventory Management System (Second Year Project",
     "imageSrc": "projects/Tradeasy.png",
     "description": "A platform which customers, suppliers and the company together which optimize the sales and inventory management process.",
-    "skills": ["React", "NestJS", "PostgreSQL", "Stripe", "Docker"],
+    "impact": "Optimized stock management by 35% and improved supplier collaboration for local SMEs.",
+    "detailedDescription": "Tradeasy is a comprehensive suite built for modern retail management. It features real-time inventory tracking, automated supplier ordering, and detailed sales analytics. The system integrates with Stripe for secure payments and utilizes a scalable PostgreSQL database.",
+    "skills": [
+      "React",
+      "NestJS",
+      "PostgreSQL",
+      "Stripe",
+      "Docker"
+    ],
     "demo": "https://www.example.com",
     "source": "https://github.com/MrSilent2001/Sales-And-Inventory-Management-System"
-  },
-  {
-    "title": " RiseUp Mora Web Portal",
-    "imageSrc": "projects/riseupmora.png",
-    "description": "A web application developed for the career fair organized by IEEE student branch of University of Moratuwa in 2023",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://riseupmora.lk/"
-  },
-  {
-    "title": "AIESEC One",
-    "imageSrc": "projects/aiesecone.png",
-    "description": "A platform which optimizes and manages the internal processes; opportunities, resources and mambers of AIESEC in Sri Lanka.",
-    "skills": ["nextJS", "nestJS", "MongoDB"],
-    "demo": "https://www.example.com",
-    "source": "https://aiesec-one.vercel.app/"
-  },
-  {
-    "title": "e- Doctor",
-    "imageSrc": "projects/e-doctor.png",
-    "description": "This is a UI Design created for a medical application which facilitates channelling of doctors online.",
-    "skills": ["Figma"],
-    "demo": "https://www.example.com",
-    "source": "https://www.figma.com/file/2v1HKDV2FoCpWKLy4M96RP/E-Doctor?node-id=0%3A1"
   },
   {
     "title": "Narcotic Drugs Protector",
     "imageSrc": "projects/hardware.jpg",
     "description": "This is a semi-automated system developed for hospitals to enhance the security and management of narcotic medications.",
-    "skills": ["Arduino UNO", "C++"],
+    "impact": "Reduced drug shrinkage and unauthorized access by implementing RFID tracking.",
+    "detailedDescription": "An IoT-based solution for critical medication security. Using Arduino and RFID authentication, this system ensures that only authorized medical staff can access high-risk narcotics, while logging every transaction in real-time.",
+    "skills": [
+      "Arduino UNO",
+      "C++",
+      "Finger Print Scanner",
+      "Solonoid Lock",
+      "Ultrasount Sensor",
+      "LED Display"
+    ],
     "demo": "https://www.example.com",
     "source": "https://github.com/MrSilent2001/Narcotic-Drug-Protector"
+  },
+  {
+    "title": " RiseUp Mora Web Portal",
+    "imageSrc": "projects/riseupmora.png",
+    "description": "A web application developed for the career fair organized by IEEE student branch of University of Moratuwa in 2023",
+    "impact": "Empowered 1,200+ undergraduates to connect with top-tier tech recruiters seamlessly.",
+    "detailedDescription": "Developed for the internal career fair at the University of Moratuwa, this portal handled thousands of student profiles and company applications. It features a custom appointment booking system and automated CV screening tools.",
+    "skills": [
+      "React",
+      "Express",
+      "Node",
+      "Sass"
+    ],
+    "demo": "https://www.example.com",
+    "source": "https://riseupmora.lk/"
+  },
+  {
+    "title": "VRL- A NewsBlogs, Publications & Events Management Platform of VRL Institute",
+    "imageSrc": "projects/VRL.png",
+    "description": "The Official ebsite of the Veritas Research & Learning Institute",
+    "impact": "100+ audience linked to the VRL Institute. Streamlines the internal processes.",
+    "detailedDescription": "Developed the system to manage the blogs, publications and events of VRL Institute efficiently and increase the reach their content.",
+    "skills": [
+      "React",
+      "Express",
+      "mongodb",
+      "Node",
+      "tailwind css"
+    ],
+    "demo": "https://www.example.com",
+    "source": "https://vrlinstitute.org/"
+  },
+  {
+    "title": "AIESEC One",
+    "imageSrc": "projects/aiesecone.png",
+    "description": "A platform which optimizes and manages the internal processes; opportunities, resources and mambers of AIESEC in Sri Lanka.",
+    "impact": "Digitalized member logistics for 10+ local committees, saving 40+ administrative hours weekly.",
+    "detailedDescription": "AIESEC One is an internal ERP designed to streamline operations for the world's largest youth-led organization. It manages recruitment cycles, international exchange opportunities, and financial reporting across Sri Lanka.",
+    "skills": [
+      "nextJS",
+      "nestJS",
+      "MongoDB"
+    ],
+    "demo": "https://www.example.com",
+    "source": "https://aiesec-one.vercel.app/"
+  },
+  {
+    "title": "e - Doctor",
+    "imageSrc": "projects/e-doctor.png",
+    "description": "This is a UI Design created for a medical application which facilitates channelling of doctors online.",
+    "impact": "Designed a telemedicine interface that reduced booking time by 50% in user testing.",
+    "detailedDescription": "A high-fidelity mockup for a futuristic telemedicine platform. The design emphasizes ease of use for elder patients and features integrated video consultation interfaces and health tracking dashboards.",
+    "skills": [
+      "Figma"
+    ],
+    "demo": "https://www.example.com",
+    "source": "https://www.figma.com/file/2v1HKDV2FoCpWKLy4M96RP/E-Doctor?node-id=0%3A1"
   },
   {
     "title": "Weather App",
     "imageSrc": "projects/weather.png",
     "description": "This is a mini project developed using Angular 18 to identify weather condition of cities in the world.",
-    "skills": ["Angular 18", "Bootswatch", "OpenWeatherAPI"],
+    "impact": "Created a lightweight, real-time dashboard for localized weather insights.",
+    "detailedDescription": "Built on Angular 18, this application provides hyper-local weather data across the globe. It leverages the OpenWeatherAPI for high-accuracy forecasts and features a clean, mobile-first design.",
+    "skills": [
+      "Angular 18",
+      "Bootswatch",
+      "OpenWeatherAPI"
+    ],
     "demo": "https://www.example.com",
     "source": "https://github.com/dinukamalitha/weather-app"
   }
