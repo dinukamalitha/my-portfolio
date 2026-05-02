@@ -83,6 +83,22 @@
     "source": "https://riseupmora.lk/"
   },
   {
+    "title": "Intelli-Climate",
+    "imageSrc": "projects/intelliclimate.png",
+    "description": "An AI-powered solution for Sri Lankan Climate & Weather Predictor.",
+    "impact": "Weather Forecasting, Climate Zone Classification and Visualize explanations for every weather prediction.",
+    "detailedDescription": "Intelli-Climate is an AI powers solution for predicting the Sri Lankan Climate and Weather. It uses DBSCAN for climate zone clustering and Gaussian Naive Bayes based rainfall classification on 13 years of daily weather data from 30 Sri Lankan cities. It includes explainability to ensure transparency using SHAP and LIME for Explainable AI (XAI).",
+    "skills": [
+      "DBSCAN",
+      "Gaussian Naive Bayes",
+      "FastAPI",
+      "SHAP",
+      "Streamlit with Plotly"
+    ],
+    "demo": "https://www.example.com",
+    "source": "https://intelli-climate.streamlit.app/"
+  },
+  {
     "title": "VRL- A NewsBlogs, Publications & Events Management Platform of VRL Institute",
     "imageSrc": "projects/VRL.png",
     "description": "The Official ebsite of the Veritas Research & Learning Institute",
@@ -111,18 +127,6 @@
     ],
     "demo": "https://www.example.com",
     "source": "https://aiesec-one.vercel.app/"
-  },
-  {
-    "title": "e - Doctor",
-    "imageSrc": "projects/e-doctor.png",
-    "description": "This is a UI Design created for a medical application which facilitates channelling of doctors online.",
-    "impact": "Designed a telemedicine interface that reduced booking time by 50% in user testing.",
-    "detailedDescription": "A high-fidelity mockup for a futuristic telemedicine platform. The design emphasizes ease of use for elder patients and features integrated video consultation interfaces and health tracking dashboards.",
-    "skills": [
-      "Figma"
-    ],
-    "demo": "https://www.example.com",
-    "source": "https://www.figma.com/file/2v1HKDV2FoCpWKLy4M96RP/E-Doctor?node-id=0%3A1"
   },
   {
     "title": "Weather App",

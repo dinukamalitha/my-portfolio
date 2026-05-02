@@ -1,0 +1,26 @@
+[
+  {
+    "event": "J'Pura Xtreme 1.0",
+    "organizer": "IEEE Student branch of University of Sri  Jayawardhanapura in 2024",
+    "achievement": "Winner",
+    "imageSrc": "achievements/hacktoberfest.jpeg"
+  },
+  {
+    "event": "Open Hack 2.0",
+    "organizer": "FOSS Community & Mozilla Club of IIT in 2023",
+    "achievement": "Second Runner Up",
+    "imageSrc": "achievements/openhack.jpeg"
+  },
+  {
+    "event": "Real Hack 4.0",
+    "organizer": "IEEE student branch of university of Kelaniya in 2022",
+    "achievement": "Top 15 - Finalist",
+    "imageSrc": "achievements/realhack.jpeg"
+  },
+  {
+    "event": "CodeX by CodeJam 2025",
+    "organizer": "Department of Computer Science and Engineering, University of Moratuwa",
+    "achievement": "Finalists - (Team Code Crackers)",
+    "imageSrc": "achievements/codejam.jpeg"
+  }
+]
