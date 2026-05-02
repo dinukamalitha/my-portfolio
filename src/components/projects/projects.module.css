@@ -39,7 +39,7 @@
 .projectsGrid {
     margin-top: 37px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     justify-items: center;
     gap: 30px;
     width: 100%;
@@ -70,6 +70,36 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.modalSkill {
+    padding: 4px 12px;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.modalActions {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+@media (min-width: 830px) {
+    .modalContent {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .modalImage {
+        width: 45%;
+    }
+
+    .modalDetails {
+        width: 55%;
+    }
 }
 
 .modalSkill {

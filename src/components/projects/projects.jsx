@@ -17,21 +17,21 @@ export const Projects = () => {
     return (
         <section id="projects" className={styles.container}>
             <h2 className={styles.title}>Projects</h2>
-            
+
             {/* Grid Container */}
             <div className={styles.projectsGrid}>
                 {projects.map((project, id) => (
-                    <ProjectCard 
-                        key={id} 
-                        project={project} 
+                    <ProjectCard
+                        key={id}
+                        project={project}
                         onClick={() => setSelectedProject(project)}
                     />
                 ))}
             </div>
 
             {/* Unique Project Popup */}
-            <Dialog 
-                open={!!selectedProject} 
+            <Dialog
+                open={!!selectedProject}
                 onClose={() => setSelectedProject(null)}
                 maxWidth="md"
                 fullWidth
@@ -56,9 +56,9 @@ export const Projects = () => {
                         </DialogTitle>
                         <DialogContent dividers sx={{ borderColor: 'rgba(255,255,255,0.1)' }}>
                             <div className={styles.modalContent}>
-                                <img 
-                                    src={getImageUrl(selectedProject.imageSrc)} 
-                                    alt={selectedProject.title} 
+                                <img
+                                    src={getImageUrl(selectedProject.imageSrc)}
+                                    alt={selectedProject.title}
                                     className={styles.modalImage}
                                 />
                                 <div className={styles.modalDetails}>
@@ -92,3 +92,16 @@ export const Projects = () => {
         </section>
     );
 }
+
+// {
+//     "title": "e - Doctor",
+//     "imageSrc": "projects/e-doctor.png",
+//     "description": "This is a UI Design created for a medical application which facilitates channelling of doctors online.",
+//     "impact": "Designed a telemedicine interface that reduced booking time by 50% in user testing.",
+//     "detailedDescription": "A high-fidelity mockup for a futuristic telemedicine platform. The design emphasizes ease of use for elder patients and features integrated video consultation interfaces and health tracking dashboards.",
+//     "skills": [
+//       "Figma"
+//     ],
+//     "demo": "https://www.example.com",
+//     "source": "https://www.figma.com/file/2v1HKDV2FoCpWKLy4M96RP/E-Doctor?node-id=0%3A1"
+//   },

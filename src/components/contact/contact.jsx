@@ -125,6 +125,7 @@ const StyledContactForm = styled.div`
         background: var(--color-surface);
         box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
         border-radius: 10px;
+        border: 1px solid rgba(124, 58, 237, 0.3);
         overflow: hidden;
 
         @media (max-width: 600px) {

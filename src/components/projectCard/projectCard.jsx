@@ -11,12 +11,12 @@ export const ProjectCard = ({ project: { title, imageSrc, description, impact, s
     const isSmallScreen = useMediaQuery('(max-width:600px)');
 
     return (
-        <Card 
+        <Card
             onClick={onClick}
-            sx={{ 
-                maxWidth: 400, 
-                minHeight: 550, 
-                display: 'flex', 
+            sx={{
+                maxWidth: 400,
+                minHeight: 550,
+                display: 'flex',
                 flexDirection: 'column',
                 cursor: 'pointer',
                 transition: 'transform 0.3s ease, box-shadow 0.3s ease',
@@ -40,7 +40,7 @@ export const ProjectCard = ({ project: { title, imageSrc, description, impact, s
                 <Typography gutterBottom variant={isSmallScreen ? 'h6' : 'h5'} component="div" sx={{ fontWeight: 700 }}>
                     {title}
                 </Typography>
-                
+
                 <Typography variant="body2" color="text.secondary" sx={{ color: 'var(--color-text-muted)', mb: 2, lineClamp: 2, display: '-webkit-box', WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                     {description}
                 </Typography>

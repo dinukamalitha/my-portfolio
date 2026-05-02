@@ -155,12 +155,12 @@
 }
 
 .listContent li h4 {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 5px;
 }
 
 .listContent li p {
-    font-size: 15px;
+    font-size: 14px;
     color: var(--color-text-muted);
     margin-bottom: 2px;
 }
@@ -196,19 +196,25 @@
 
 @media screen and (max-width: 600px) {
     .container {
-        padding: 50px 10px;
+        padding: 40px 15px;
+        width: 100%;
     }
 
     .title {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .column1 {
-        max-width: 250px;
+        max-width: 200px;
     }
 
     .aboutItem {
-        padding: 20px 15px;
+        padding: 20px 10px;
+    }
+
+    .aboutItem ul {
+        padding: 0 10px !important;
+        font-size: 15px !important;
     }
 
     .sec2Column {
@@ -221,11 +227,11 @@
     }
 
     .aboutItems {
-        gap: 8px;
+        gap: 5px;
     }
 
     .aboutItems h2 {
-        font-size: 14px;
-        padding: 8px 12px;
+        font-size: 13px;
+        padding: 6px 10px;
     }
 }
