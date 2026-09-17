@@ -24,7 +24,7 @@
 .section1 {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 40px;
     margin-bottom: 50px;
 }
@@ -32,14 +32,25 @@
 .column1 {
     flex: 0 0 35%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .aboutImg {
     width: 100%;
     border-radius: 16px;
     object-fit: cover;
+    border: var(--about-border);
     box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.introText {
+    color: var(--color-text-muted);
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: center;
+    margin: 0;
 }
 
 .column2 {
@@ -51,6 +62,7 @@
 .aboutItem {
     color: var(--color-text);
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -62,7 +74,7 @@
     padding: 30px;
 }
 
-.aboutItems {
+.tabs {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -71,23 +83,27 @@
     gap: 15px;
 }
 
-.aboutItems h2 {
+.tabButton {
+    font-family: inherit;
     font-size: 18px;
     font-weight: 600;
+    color: var(--color-text);
+    background: none;
+    border: none;
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 9999px;
     transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-.aboutItems h2:hover {
+.tabButton:hover {
     transform: translateY(-1px);
-    background-color: rgba(124, 58, 237, 0.06);
+    background-color: rgba(var(--color-primary-rgb), 0.06);
     color: var(--color-primary);
 }
 
 .activeTab {
-    background-color: rgba(124, 58, 237, 0.1);
+    background-color: rgba(var(--color-primary-rgb), 0.1);
     color: var(--color-primary);
 }
 
@@ -206,11 +222,11 @@
         margin-bottom: 20px;
     }
 
-    .aboutItems {
+    .tabs {
         gap: 8px;
     }
 
-    .aboutItems h2 {
+    .tabButton {
         font-size: 14px;
         padding: 8px 12px;
     }

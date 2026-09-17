@@ -5,6 +5,8 @@ import './index.css'
 
 import "@fontsource/outfit"
 import "@fontsource/roboto"
+import "@fontsource/poppins/600.css"
+import "@fontsource/poppins/700.css"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

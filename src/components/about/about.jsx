@@ -72,16 +72,16 @@ export const About = () => {
                 padding: '10px 12px',
                 borderRadius: '8px',
                 backgroundColor: 'var(--color-surface)',
-                border: '1px solid rgba(124, 58, 237, 0.2)',
+                border: '1px solid rgba(var(--color-primary-rgb), 0.2)',
                 cursor: 'pointer',
                 transition: 'all 0.2s ease',
             }}
             onMouseOver={(e) => {
                 e.currentTarget.style.borderColor = 'var(--color-primary)';
-                e.currentTarget.style.backgroundColor = 'rgba(124, 58, 237, 0.05)';
+                e.currentTarget.style.backgroundColor = 'rgba(var(--color-primary-rgb), 0.05)';
             }}
             onMouseOut={(e) => {
-                e.currentTarget.style.borderColor = 'rgba(124, 58, 237, 0.2)';
+                e.currentTarget.style.borderColor = 'rgba(var(--color-primary-rgb), 0.2)';
                 e.currentTarget.style.backgroundColor = 'var(--color-surface)';
             }}
         >
@@ -89,7 +89,7 @@ export const About = () => {
                 width: '36px',
                 height: '36px',
                 borderRadius: '6px',
-                backgroundColor: 'rgba(124, 58, 237, 0.08)',
+                backgroundColor: 'rgba(var(--color-primary-rgb), 0.08)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -112,36 +112,40 @@ export const About = () => {
                         alt="Dinuka Malitha"
                         className={styles.aboutImg}
                     />
+                    <p className={styles.introText}>
+                        Final Year IT &amp; Management Undergraduate at the University of Moratuwa, and a Full Stack
+                        Software Developer.
+                    </p>
                 </div>
                 <div className={styles.column2}>
                     <div className={styles.aboutItem}>
-                        <div style={{ width: '100%', marginBottom: '35px', padding: '0 20px' }}>
-                            <ul style={{ listStylePosition: 'inside', fontSize: '17px', lineHeight: '1.8', color: 'var(--color-text)' }}>
-                                <li>
-                                    Final Year IT & Management Undergraduate at the University of Moratuwa
-                                </li>
-                                <li style={{ marginTop: '10px' }}>
-                                    A Full Stack Software Developer
-                                </li>
-                            </ul>
-                        </div>
-                        <div className={styles.aboutItems}>
-                            <h2
-                                className={activeSection === 'Education' ? styles.activeTab : ''}
+                        <div className={styles.tabs} role="tablist" aria-label="About Me categories">
+                            <button
+                                type="button"
+                                role="tab"
+                                id="tab-education"
+                                aria-selected={activeSection === 'Education'}
+                                aria-controls="panel-education"
+                                className={activeSection === 'Education' ? `${styles.tabButton} ${styles.activeTab}` : styles.tabButton}
                                 onClick={() => setActiveSection('Education')}
                             >
                                 Educational Background
-                            </h2>
-                            <h2
-                                className={activeSection === 'Certificates' ? styles.activeTab : ''}
+                            </button>
+                            <button
+                                type="button"
+                                role="tab"
+                                id="tab-certificates"
+                                aria-selected={activeSection === 'Certificates'}
+                                aria-controls="panel-certificates"
+                                className={activeSection === 'Certificates' ? `${styles.tabButton} ${styles.activeTab}` : styles.tabButton}
                                 onClick={() => setActiveSection('Certificates')}
                             >
                                 Licenses & Certificates
-                            </h2>
+                            </button>
                         </div>
                         <div className={styles.aboutItemsContent}>
                             {activeSection === 'Education' && (
-                                <div>
+                                <div id="panel-education" role="tabpanel" aria-labelledby="tab-education">
                                     <ul className={styles.listContent}>
                                         <li>
                                             <div>
@@ -172,7 +176,7 @@ export const About = () => {
                                 </div>
                             )}
                             {activeSection === 'Certificates' && (
-                                <div>
+                                <div id="panel-certificates" role="tabpanel" aria-labelledby="tab-certificates">
                                     <ul className={styles.listContent}>
                                         <li>
                                             <div>
@@ -247,7 +251,7 @@ export const About = () => {
                                 <h4 style={{ marginBottom: '12px' }}>Sports</h4>
                                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                                     {['Cricket', 'Badminton', 'Athletics'].map((item) => (
-                                        <span key={item} style={{ padding: '6px 14px', backgroundColor: 'rgba(124, 58, 237, 0.08)', color: 'var(--color-primary)', borderRadius: '20px', fontSize: '14px', fontWeight: '500', border: '1px solid rgba(124, 58, 237, 0.2)' }}>{item}</span>
+                                        <span key={item} style={{ padding: '6px 14px', backgroundColor: 'rgba(var(--color-primary-rgb), 0.08)', color: 'var(--color-primary)', borderRadius: '20px', fontSize: '14px', fontWeight: '500', border: '1px solid rgba(var(--color-primary-rgb), 0.2)' }}>{item}</span>
                                     ))}
                                 </div>
                             </div>
@@ -257,7 +261,7 @@ export const About = () => {
                                 <h4 style={{ marginBottom: '12px' }}>Hobbies</h4>
                                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                                     {['Watching movies & TV Series', 'Listening to Music', 'Hiking'].map((item) => (
-                                        <span key={item} style={{ padding: '6px 14px', backgroundColor: 'rgba(124, 58, 237, 0.08)', color: 'var(--color-primary)', borderRadius: '20px', fontSize: '14px', fontWeight: '500', border: '1px solid rgba(124, 58, 237, 0.2)' }}>{item}</span>
+                                        <span key={item} style={{ padding: '6px 14px', backgroundColor: 'rgba(var(--color-primary-rgb), 0.08)', color: 'var(--color-primary)', borderRadius: '20px', fontSize: '14px', fontWeight: '500', border: '1px solid rgba(var(--color-primary-rgb), 0.2)' }}>{item}</span>
                                     ))}
                                 </div>
                             </div>
@@ -267,7 +271,7 @@ export const About = () => {
                                 <h4 style={{ marginBottom: '12px' }}>Role Models</h4>
                                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                                     {['Steve Jobs', 'Mark Zuckerberg', 'Kumar Sangakkara'].map((item) => (
-                                        <span key={item} style={{ padding: '6px 14px', backgroundColor: 'rgba(124, 58, 237, 0.08)', color: 'var(--color-primary)', borderRadius: '20px', fontSize: '14px', fontWeight: '500', border: '1px solid rgba(124, 58, 237, 0.2)' }}>{item}</span>
+                                        <span key={item} style={{ padding: '6px 14px', backgroundColor: 'rgba(var(--color-primary-rgb), 0.08)', color: 'var(--color-primary)', borderRadius: '20px', fontSize: '14px', fontWeight: '500', border: '1px solid rgba(var(--color-primary-rgb), 0.2)' }}>{item}</span>
                                     ))}
                                 </div>
                             </div>
@@ -297,7 +301,7 @@ export const About = () => {
                                     width: '40px',
                                     height: '40px',
                                     borderRadius: '8px',
-                                    backgroundColor: 'rgba(124, 58, 237, 0.08)',
+                                    backgroundColor: 'rgba(var(--color-primary-rgb), 0.08)',
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',

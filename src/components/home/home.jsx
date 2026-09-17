@@ -15,7 +15,7 @@ export const Home = () => {
                     Hi, I'm {""}
                     <span className={styles.typedText}>
                         <ReactTyped
-                            strings={["Dinuka", "a Developper"]}
+                            strings={["Dinuka", "a Software Engineer"]}
                             typeSpeed={40}
                             backSpeed={50}
                             loop
@@ -23,14 +23,14 @@ export const Home = () => {
                     </span>
                 </h1>
                 <p className={styles.description}>
-                    A Highly Motivated and Passionate Tech enthusiast with excellent academic record and a sound knowledge on
-                    latest cutting-edge technologies who always seeks for opportunities to improve knowledge and skills with a
-                    motive of securing a Software Engineering position in the industry.
+                    A motivated and detail-oriented Software Engineering undergraduate with a strong academic record and a
+                    solid grounding in modern full-stack development, always looking to grow my skills and take on new
+                    opportunities in the software industry.
                 </p>
 
                 <Button
                     variant="contained"
-                    href="src/assets/cv/Dinuka Malitha_SE.pdf"
+                    href="/DINUKAMALITHA-CV.pdf"
                     download="Dinuka Malitha_Resume.pdf"
                     sx={{
                         borderRadius: '9999px',
@@ -38,10 +38,10 @@ export const Home = () => {
                         textTransform: 'none',
                         fontWeight: 500,
                         backgroundColor: 'var(--color-primary)',
-                        boxShadow: '0 12px 30px rgba(37, 99, 235, 0.35)',
+                        boxShadow: '0 12px 30px rgba(var(--color-primary-rgb), 0.35)',
                         '&:hover': {
                             backgroundColor: 'var(--color-primary-dark)',
-                            boxShadow: '0 16px 40px rgba(37, 99, 235, 0.5)',
+                            boxShadow: '0 16px 40px rgba(var(--color-primary-rgb), 0.5)',
                         }
                     }}
                 >

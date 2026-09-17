@@ -6,13 +6,6 @@ import { faFacebook, faLinkedin, faGithub, faHackerrank } from '@fortawesome/fre
 export const Footer = () => {
     return (
         <footer>
-            <div className={styles.waves} >
-                <div className={styles.wave} id={styles.wave1}></div>
-                <div className={styles.wave} id={styles.wave2}></div>
-                <div className={styles.wave} id={styles.wave3}></div>
-                <div className={styles.wave} id={styles.wave4}></div>
-
-            </div>
             <ul className={styles.socialIcons}>
                 <li>
                     <a href="https://facebook.com/dinuka.malitha.9">
@@ -48,7 +41,7 @@ export const Footer = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#tech stack">
+                    <a href="#tech-stack">
                         Technologies
                     </a>
                 </li>
@@ -64,7 +57,7 @@ export const Footer = () => {
                 </li>
             </ul>
 
-            <p className={styles.text}>All Right Reserved &#169; 2024</p>
+            <p className={styles.text}>All Rights Reserved &#169; 2026 Dinuka Malitha</p>
         </footer>
     );
 };

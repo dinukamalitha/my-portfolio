@@ -48,20 +48,32 @@ export const Contact = () => {
 
     return (
         <Section id="contacts" className="container">
-            <h2>Contact Me!</h2>
+            <h2>Get In Touch</h2>
+            <p className="subtitle">
+                Have an opportunity or question? Reach out directly or send a message using the form below.
+            </p>
+            {/* TODO: replace with real contact details */}
+            <ul className="contactDetails">
+                <li>
+                    <strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a>
+                </li>
+                <li>
+                    <strong>Phone:</strong> <a href="tel:+94000000000">+94 00 000 0000</a>
+                </li>
+            </ul>
             <StyledContactForm>
                 <div className="contact-container">
                     <div className="image-section">
-                        <img src={getImageUrl("contacts/contactme.png")} alt="Contact Us" />
+                        <img src={getImageUrl("contacts/contactme.png")} alt="Illustration of a person sending a message" />
                     </div>
                     <div className="form-section">
                         <form ref={form} onSubmit={sendEmail}>
-                            <label>Name</label>
-                            <input type="text" name="user_name" />
-                            <label>Email</label>
-                            <input type="email" name="user_email" />
-                            <label>Message</label>
-                            <textarea name="message" />
+                            <label htmlFor="contact-name">Name</label>
+                            <input id="contact-name" type="text" name="user_name" required />
+                            <label htmlFor="contact-email">Email</label>
+                            <input id="contact-email" type="email" name="user_email" required />
+                            <label htmlFor="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" required />
                             <input type="submit" value="Send" />
                         </form>
                     </div>
@@ -95,12 +107,41 @@ const Section = styled.section`
 
         @media (max-width: 768px) {
             font-size: 28px;
-            margin-bottom: -50px;
         }
 
         @media (max-width: 480px) {
             font-size: 24px;
-            margin-bottom: -25px;
+        }
+    }
+
+    .subtitle {
+        max-width: 560px;
+        margin: 0 auto;
+        text-align: center;
+        color: var(--color-text-muted);
+        font-size: 17px;
+        padding: 0 20px;
+    }
+
+    .contactDetails {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        padding: 0 20px;
+        color: var(--color-text);
+        font-size: 16px;
+
+        a {
+            color: var(--color-primary);
+            text-decoration: none;
+
+            &:hover {
+                color: var(--color-primary-dark);
+                text-decoration: underline;
+            }
         }
     }
 `;
@@ -120,7 +161,8 @@ const StyledContactForm = styled.div`
         width: 80%;
         max-width: 1000px;
         background: var(--color-surface);
-        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+        border: 1px solid var(--color-border);
+        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.10);
         border-radius: 10px;
         overflow: hidden;
 
@@ -131,7 +173,7 @@ const StyledContactForm = styled.div`
     }
 
     .image-section {
-        background: #f0f0f0;
+        background: var(--color-secondary);
         flex: 1;
 
         img {
@@ -165,10 +207,12 @@ const StyledContactForm = styled.div`
                 padding: 7px;
                 outline: none;
                 border-radius: 5px;
-                border: 1px solid rgb(220, 220, 220);
+                border: 1px solid var(--color-border);
+                background: var(--color-bg);
+                color: var(--color-text);
 
                 &:focus {
-                    border: 2px solid rgba(0, 206, 158, 1);
+                    border: 2px solid var(--color-primary);
                 }
 
                 @media (max-width: 600px) {
@@ -208,7 +252,7 @@ const StyledContactForm = styled.div`
                 &:hover {
                     background: var(--color-primary-dark);
                     transform: translateY(-1px);
-                    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.35);
+                    box-shadow: 0 10px 24px rgba(var(--color-primary-rgb), 0.35);
                 }
 
 

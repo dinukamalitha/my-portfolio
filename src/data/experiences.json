@@ -1,0 +1,22 @@
+[
+  {
+    "role": "[Role Title]",
+    "organisation": "[Company Name]",
+    "startDate": "[Month, Year]",
+    "endDate": "Present",
+    "responsibilities": [
+      "[Add a key responsibility or achievement]",
+      "[Add another responsibility or achievement]"
+    ]
+  },
+  {
+    "role": "[Role Title]",
+    "organisation": "[Company Name]",
+    "startDate": "[Month, Year]",
+    "endDate": "[Month, Year]",
+    "responsibilities": [
+      "[Add a key responsibility or achievement]",
+      "[Add another responsibility or achievement]"
+    ]
+  }
+]

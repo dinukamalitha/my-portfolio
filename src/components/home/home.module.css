@@ -24,7 +24,7 @@
     font-size: 72px;
     font-weight: 900;
     margin-bottom: 33px;
-    font-family: var(--font-roboto);
+    font-family: var(--font-heading);
     background: linear-gradient(90deg,
             var(--color-primary) 0%,
             var(--color-accent) 60%);
@@ -82,7 +82,7 @@
     top: -20px;
     left: -7.5em;
     border: 764px;
-    background: rgba(236, 72, 153, 0.55);
+    background: rgba(var(--color-accent-rgb), 0.45);
     filter: blur(90px);
     z-index: 0;
 }
@@ -95,7 +95,7 @@
     top: 246px;
     right: -5vw;
     border: 764px;
-    background: rgba(124, 58, 237, 0.55);
+    background: rgba(var(--color-primary-rgb), 0.55);
     filter: blur(100px);
     z-index: 0;
 }

@@ -8,7 +8,7 @@
     "source": "https://github.com/MrSilent2001/Sales-And-Inventory-Management-System"
   },
   {
-    "title": " RiseUp Mora Web Portal",
+    "title": "RiseUp Mora Web Portal",
     "imageSrc": "projects/riseupmora.png",
     "description": "A web application developed for the career fair organized by IEEE student branch of University of Moratuwa in 2023",
     "skills": ["React", "Express", "Node", "Sass"],
@@ -18,13 +18,13 @@
   {
     "title": "AIESEC One",
     "imageSrc": "projects/aiesecone.png",
-    "description": "A platform which optimizes and manages the internal processes; opportunities, resources and mambers of AIESEC in Sri Lanka.",
+    "description": "A platform which optimizes and manages the internal processes; opportunities, resources and members of AIESEC in Sri Lanka.",
     "skills": ["nextJS", "nestJS", "MongoDB"],
     "demo": "https://www.example.com",
     "source": "https://aiesec-one.vercel.app/"
   },
   {
-    "title": "e- Doctor",
+    "title": "e-Doctor",
     "imageSrc": "projects/e-doctor.png",
     "description": "This is a UI Design created for a medical application which facilitates channelling of doctors online.",
     "skills": ["Figma"],

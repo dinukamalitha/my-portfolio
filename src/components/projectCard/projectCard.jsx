@@ -12,18 +12,29 @@ import {useMediaQuery} from "@mui/material";
 export const ProjectCard = ({ project: { title, imageSrc, description, skills, demo, source } }) => {
     const isSmallScreen = useMediaQuery('(max-width:600px)');
     return (
-        <Card sx={{ maxWidth: 375, minHeight: 600 }}>
+        <Card
+            sx={{
+                width: '100%',
+                maxWidth: 375,
+                minHeight: 600,
+                margin: '0 auto',
+                backgroundColor: 'var(--color-surface)',
+                color: 'var(--color-text)',
+                border: '1px solid var(--color-border)',
+                boxShadow: '0 16px 40px rgba(15, 23, 42, 0.16)',
+            }}
+        >
             <CardMedia
                 sx={{ minHeight:300 }}
                 image={getImageUrl(imageSrc)}
-                alt={`image of ${title}`}
+                alt={`Screenshot of ${title}`}
                 title={title}
             />
             <CardContent>
-                <Typography gutterBottom  variant={isSmallScreen ? 'h6' : 'h5'} component="div">
+                <Typography gutterBottom variant={isSmallScreen ? 'h6' : 'h5'} component="div" sx={{ color: 'var(--color-text)' }}>
                     {title}
                 </Typography>
-                <Typography variant={isSmallScreen ? 'body2' : 'body1'} color="text.secondary">
+                <Typography variant={isSmallScreen ? 'body2' : 'body1'} sx={{ color: 'var(--color-text-muted)' }}>
                     {description}
                 </Typography>
                 <ul className={styles.skills}>
@@ -36,8 +47,25 @@ export const ProjectCard = ({ project: { title, imageSrc, description, skills, d
                     })}
                 </ul>
             </CardContent>
-            <CardActions sx={{display: 'flex', flexDirection: 'row', justifyContent: ' center', marginBottom: '20px'}}>
-                <Button size="small" href={source} variant="outlined">View Source</Button>
+            <CardActions sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center', marginBottom: '20px'}}>
+                <Button
+                    size="small"
+                    href={source}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    variant="outlined"
+                    sx={{
+                        borderColor: 'var(--color-primary)',
+                        color: 'var(--color-primary)',
+                        textTransform: 'none',
+                        '&:hover': {
+                            borderColor: 'var(--color-primary-dark)',
+                            backgroundColor: 'rgba(var(--color-primary-rgb), 0.08)',
+                        },
+                    }}
+                >
+                    View Source
+                </Button>
             </CardActions>
         </Card>
     );

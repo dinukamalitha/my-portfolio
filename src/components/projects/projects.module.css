@@ -18,34 +18,12 @@
     text-shadow: none;
 }
 
-.projects{
+.grid{
     margin-top: 37px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 375px));
     justify-content: center;
-    gap: 15px;
-    width: 100%;
-    padding-bottom: 30px;
-}
-
-.mySwiper {
-    width: 100%;
-    padding: 50px 0;
-
-}
-
-.swiperSlide{
-    background-position: center;
-    background-size: cover;
-    width: auto;
-    height: auto;
-    margin: 0 10px;
-}
-
-.swiperSlide img{
-    display: block;
-    width: 100%;
+    gap: 32px;
+    padding-bottom: 40px;
 }
 

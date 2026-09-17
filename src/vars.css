@@ -1,58 +1,66 @@
 :root {
     /* Core Text Colors */
-    --color-text: #E5E7EB;
-    --color-text-white: #F9FAFB;
-    --color-text-muted: #9CA3AF;
+    --color-text: #E2E8F0;
+    --color-text-white: #F8FAFC;
+    --color-text-muted: #94A3B8;
 
-    /* Brand & Accent - pinkish purple (dark theme defaults) */
-    --color-primary: #A855F7;
-    --color-primary-dark: #7C3AED;
-    --color-accent: #F472B6;
+    /* Brand & Accent - indigo/sky/amber (dark theme defaults) */
+    --color-primary: #818CF8;
+    --color-primary-dark: #6366F1;
+    --color-accent: #FBBF24;
 
     /* social icons */
-    --color-social-icons: #cbaefe;
+    --color-social-icons: #A5B4FC;
 
     /* Surfaces & Backgrounds */
-    --color-bg: #020617;
-    --color-bg-navbar: rgba(38, 25, 67, 0.85);
+    --color-bg: #0B1120;
+    --color-bg-navbar: rgba(11, 17, 32, 0.85);
 
-    --color-surface: #020617;
-    --color-secondary: #111827;
-    --color-border: #1F2937;
-    --color-dark: #020617;
+    --color-surface: #111827;
+    --color-secondary: #1E293B;
+    --color-border: #1E293B;
+    --color-dark: #0B1120;
 
     /* Typography */
     --font-roboto: "roboto";
+    --font-heading: "Poppins", "Outfit", sans-serif;
+
+    /* RGB triplets, for rgba() compositing */
+    --color-primary-rgb: 129, 140, 248;
+    --color-accent-rgb: 251, 191, 36;
 
     /* About Section Containers */
-    --about-border: 1px solid rgba(255, 255, 255, 0.1);
-    --about-shadow: 0 8px 32px rgba(124, 58, 237, 0.2);
-    --about-bg: rgba(2, 6, 23, 0.7);
+    --about-border: 1px solid rgba(255, 255, 255, 0.08);
+    --about-shadow: 0 8px 32px rgba(var(--color-primary-rgb), 0.25);
+    --about-bg: rgba(11, 17, 32, 0.7);
     --about-backdrop: blur(12px);
 }
 
 /* Light theme overrides */
 [data-theme="light"] {
-    --color-text: #111827;
+    --color-text: #0F172A;
     --color-text-white: #FFFFFF;
-    --color-text-muted: #6B7280;
+    --color-text-muted: #64748B;
 
-    --color-primary: #7C3AED;
-    --color-primary-dark: #5B21B6;
-    --color-accent: #EC4899;
+    --color-primary: #4F46E5;
+    --color-primary-dark: #4338CA;
+    --color-accent: #D97706;
 
-    --color-social-icons: #5f017e;
+    --color-social-icons: #4338CA;
 
-    --color-bg: #FDF2FF;
-    --color-bg-navbar: rgba(255, 230, 253, 0.85);
+    --color-bg: #F8FAFC;
+    --color-bg-navbar: rgba(248, 250, 252, 0.85);
 
     --color-surface: #FFFFFF;
-    --color-secondary: #FCE7F3;
-    --color-border: #E5E7EB;
-    --color-dark: #020617;
+    --color-secondary: #EEF2FF;
+    --color-border: #E2E8F0;
+    --color-dark: #0B1120;
 
-    --about-border: 1px solid transparent;
-    --about-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+    --color-primary-rgb: 79, 70, 229;
+    --color-accent-rgb: 217, 119, 6;
+
+    --about-border: 1px solid var(--color-border);
+    --about-shadow: 0 12px 28px rgba(15, 23, 42, 0.10), 0 2px 8px rgba(15, 23, 42, 0.05);
     --about-bg: #FFFFFF;
     --about-backdrop: none;
 }
