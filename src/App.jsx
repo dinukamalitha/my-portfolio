@@ -1,6 +1,7 @@
 import { Navbar } from "./components/navabar/navbar.jsx";
 import { Home } from "./components/home/home.jsx";
 import { About } from "./components/about/about.jsx";
+import { Experience } from "./components/experience/experience.jsx";
 import { Projects } from "./components/projects/projects.jsx";
 import { Achievements } from "./components/achievements/achievements.jsx";
 import Contact from "./components/contact/contact.jsx";
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Experience />
       <Projects />
       <Achievements />
       <Contact />

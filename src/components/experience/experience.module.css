@@ -1,0 +1,216 @@
+@import "../../vars.css";
+
+.container {
+    position: relative;
+    border-radius: 15px;
+    padding: 20px 0 0 0;
+    margin-top: 80px;
+    scroll-margin-top: 90px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 92%;
+        padding: 50px 10px;
+    }
+}
+
+.title {
+    text-align: center;
+    color: var(--color-text);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    margin: 25px 0 40px 0;
+    text-shadow: none;
+}
+
+.workSection {
+    margin-bottom: 48px;
+}
+
+.skillsSection {
+    margin-bottom: 20px;
+}
+
+.subheading {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-text-muted);
+    margin: 0 0 16px 0;
+    padding-left: 12px;
+    border-left: 3px solid var(--color-primary);
+}
+
+/* Work experience timeline */
+
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-left: 24px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: rgba(124, 58, 237, 0.25);
+}
+
+.timelineEntry {
+    position: relative;
+    background-color: var(--color-surface);
+    border: 1px solid rgba(124, 58, 237, 0.3);
+    border-radius: 12px;
+    padding: 18px 22px;
+}
+
+.timelineEntry::before {
+    content: '';
+    position: absolute;
+    left: -23px;
+    top: 24px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    border: 2px solid var(--color-bg);
+}
+
+.entryHeader {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.entryTitle {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.entryDates {
+    font-size: 13px;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+}
+
+.entryOrg {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 2px 0 0 0;
+}
+
+.entryDesc {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin: 8px 0 0 0;
+}
+
+/* Skills */
+
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skillCard {
+    background-color: var(--color-surface);
+    border: 1px solid rgba(124, 58, 237, 0.3);
+    border-radius: 12px;
+    padding: 18px 20px;
+}
+
+.skillGroupTitle {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    color: var(--color-text-muted);
+    margin: 0 0 12px 0;
+}
+
+.skillChips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skillChip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background-color: var(--color-secondary);
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    border-radius: 9999px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text);
+    transition: border-color 0.2s ease;
+}
+
+.skillChip:hover {
+    border-color: var(--color-primary);
+}
+
+.skillIcon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        padding: 60px 15px;
+    }
+
+    .skillsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 40px 15px;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .skillsGrid {
+        grid-template-columns: 1fr;
+    }
+}

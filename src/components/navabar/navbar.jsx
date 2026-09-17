@@ -14,7 +14,7 @@ import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { applyTheme, getInitialTheme } from "../../utils.js";
 
-const pages = ['About', 'Projects', 'Achievements', 'Contact'];
+const pages = ['About', 'Experience', 'Projects', 'Achievements', 'Contact'];
 
 export const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
